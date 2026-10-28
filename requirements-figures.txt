@@ -1,0 +1,6 @@
+numpy==1.26.4
+matplotlib==3.10.8
+scipy==1.10.1
+PyMuPDF==1.26.7
+# Optional, only to regenerate real-data previews from authorized local data:
+# nibabel, scikit-image, pyvista, vtk

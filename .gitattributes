@@ -1,0 +1,4 @@
+# Preserve reviewed release bytes, including text line endings and SHA manifests.
+* -text
+*.png binary
+*.pdf binary

@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "scope": "Publication privacy adaptation only; no fitted estimator, threshold, row count, row order, target or deployment numerical operation changed",
+  "historical_source_relative_path": "work/nc01_yz_reconstruction_v2_20261027.py",
+  "historical_source_sha256": "5d3df858cfcb2c7dde6fa50359e2098b5f5e6ee30ee3cfe01918f98ebb2b31f0",
+  "local_original_source_retained_unchanged": true,
+  "public_sources_are_byte_identical_to_historical_original": false,
+  "changes": [
+    "Remove the explicit ordered historical source-ID tuple from both public copies",
+    "Commit to the same exact ordered 48-string binding with SHA256; helper rejects other orders, counts or string values",
+    "Use the commitment helper in build_training_arrays and fit_two_heads; preserve all prior numerical and target-count constraints",
+    "Mark the public source as privacy-adapted and add a build-time AST guard against reintroducing canonical source-ID literal collections"
+  ],
+  "ordered_binding": {
+    "count": 48,
+    "sha256": "59e8ca830a33562b52d896139b35db9abd0c5bb26450451659aee3e842e7378a",
+    "encoding": "json.dumps(list(ordered_ids), ensure_ascii=True, separators=(',', ':')).encode('ascii'); no trailing newline",
+    "notice": "An integrity commitment omits the explicit roster; it is not encryption or a claim of cryptographic anonymization"
+  },
+  "public_files": [
+    {
+      "path": "strokepointpp/_frozen/gate_arrays.py",
+      "sha256": "aa16d3b713b843f191d30a590f3db6e36aba0ac7c2033c9b72a25ff1fe5674e4"
+    },
+    {
+      "path": "archive/algorithms/work/nc01_yz_reconstruction_v2_20261027.py",
+      "sha256": "aa16d3b713b843f191d30a590f3db6e36aba0ac7c2033c9b72a25ff1fe5674e4"
+    }
+  ],
+  "canonical_source_diff": {
+    "sha256": "d3b1b602f36bfecf0e405fe54616193e5562349416c487e38110ea8dc9004b3a",
+    "encoding": "UTF-8 of difflib.unified_diff(original_text.splitlines(True), public_text.splitlines(True), fromfile='original_source', tofile='privacy_adapted_public_source') joined without added separators",
+    "full_diff_not_published": "Removed source identifiers would otherwise reappear in deletion lines"
+  },
+  "verification": {
+    "synthetic_contract_tests_passed": 5,
+    "actual_estimator_fit_calls": 0,
+    "patient_arrays_read": 0,
+    "checkpoints_loaded": 0,
+    "historical_source_metadata_ordered_binding_passed": true,
+    "historical_reversed_or_omitted_binding_rejected": true,
+    "builder_recreates_public_source_exactly": true,
+    "both_public_copies_identical": true,
+    "test_command": "python -m unittest discover -s tests -p test_privacy_contract.py -v"
+  }
+}

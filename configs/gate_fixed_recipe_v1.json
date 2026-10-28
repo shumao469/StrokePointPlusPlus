@@ -1,0 +1,97 @@
+{
+  "labels": {
+    "canonical_order": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      15
+    ],
+    "names": [
+      "BA",
+      "R-PCA",
+      "L-PCA",
+      "R-ICA",
+      "R-MCA",
+      "L-ICA",
+      "L-MCA",
+      "R-Pcom",
+      "L-Pcom",
+      "Acom",
+      "R-ACA",
+      "L-ACA",
+      "3rd-A2"
+    ],
+    "Pcom_native_labels": [
+      8,
+      9
+    ],
+    "Pcom_indices": [
+      7,
+      8
+    ],
+    "A2_native_label": 15,
+    "A2_index": 12,
+    "binary_classes": [
+      0,
+      1
+    ],
+    "public_CLAIM_A2_label13_is_not_canonical15": true
+  },
+  "thresholds": {
+    "Pcom": 0.05,
+    "third_A2": 0.05
+  },
+  "feature_recipe": {
+    "backbone": "FullInformationPP info_euclidean, original constructor seed=seed+1000*fold, exact best.pt state_dict",
+    "extraction": "Frozen hooks sa1/global_net/fp1; interpolated F64, global G256, final L64. Exact original geometric route euclidean with geodesic interpolation from native_gd.",
+    "fold_prior": "For each ORIGINALfold24 FIT: count geometry.y over CT+MR; priors=counts/counts.sum(); maximum(priors,1e-8); normalize; use log(prior). This is legacy prior definition, not a new risk-probability clipping policy.",
+    "normalized_design": "C=concat(xyz,broadcast(G @ global_projection61)); normalize C/F/L by fixed per-model norms. Cross=(C @ context_product16)*(F @ fine_product16). X=concat(C64,F64,cross16), full/real144.",
+    "calibrated_logits": "((X @ weight_float32.T + bias_float32) + logprior).astype(float32).",
+    "FIT_model_aggregation": "Each patient ONLY its ORIGINALfold two seeds. Average calibrated logits,F,L across those2 models. Never evaluate that patient using opposite-fold models in this reconstruction.",
+    "later_external_deployment_model_aggregation": "OriginalY deployment averages calibrated logits,F,L across all4 fold-seed models. No external inference authorized by this spec alone.",
+    "point_candidate_labels": "Argmax of averaged calibrated logits; not raw backbone argmax and not majority vote of per-model labels.",
+    "segments": {
+      "algorithm": "DBSCAN",
+      "eps": 0.015,
+      "eps_units": "Original cached xyz units",
+      "min_samples": 3,
+      "selection": "Only points whose predicted argmax matches this class",
+      "empty": "zeros256"
+    },
+    "segment_embedding_order": [
+      "Fmean64",
+      "Fmax64",
+      "Lmean64",
+      "Lmax64"
+    ],
+    "within_class_segments": "Elementwise maximum across all segment embeddings",
+    "Pcom_left_right": "Elementwise maximum between R-Pcom and L-Pcom embeddings",
+    "CT_MR_patient_features": "Elementwise MAXIMUM across CT/MR for each head; NOT mean despite legacy comments/protocol prose saying average.",
+    "Pcom_supervised_target": "Boolean OR of native label8or9 present in CT OR MR",
+    "A2_supervised_target": "Boolean OR of native label15 present in CT OR MR",
+    "gate": "Presence predict_proba for binaryclass1 >= locked0.05. Otherwise block Pcomindices7/8 orA2index12; relabel only originally blocked argmax points by remaining calibrated logits, no UNKNOWN output."
+  },
+  "historical_limitations": {
+    "FIT_backbones_exposed_to_same_FIT_patient": true,
+    "FIT_models_per_patient": 2,
+    "external_models_per_patient": 4,
+    "in_sample_FIT_features_not_clean_patient_out": true,
+    "FIT_to_external_generator_mismatch_possible": true,
+    "independent_seed_or_fold_F_L_coordinates_not_aligned": true,
+    "preserve_original_latent_averaging_not_claim_new_semantic_alignment": true,
+    "actual_code_CT_MR_max_overrides_inaccurate_average_comment": true,
+    "new_version_not_recovered_original_fitted_state": true,
+    "original_Y65_outcomes_must_not_validate_or_select_reconstruction": true,
+    "GPU_policy": "New runner must freeze TF32off, float32 feature operator order and CPU readout arithmetic or declared tolerance before actual extraction. Original extraction called numpy on CPU tensors; a GPU wrapper needs explicit cpu transfers and cannot assume original helper works on CUDA unchanged.",
+    "no_implicit_scope_expansion_to_new_JOINT": true
+  }
+}

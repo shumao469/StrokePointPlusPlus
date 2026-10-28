@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="510.23622pt" height="566.929134pt" viewBox="0 0 510.23622 566.929134" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-28T13:47:03.314805</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>StrokePoint++ reviewed-evidence figure builder</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 566.929134 
+L 510.23622 566.929134 
+L 510.23622 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 35.716535 147.344882 
+L 489.826772 147.344882 
+" clip-path="url(#p65aa06ec18)" style="fill: none; stroke: #e3e6e9; stroke-width: 0.65; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 35.716535 231.36378 
+L 489.826772 231.36378 
+" clip-path="url(#p65aa06ec18)" style="fill: none; stroke: #e3e6e9; stroke-width: 0.65; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 35.716535 315.382677 
+L 489.826772 315.382677 
+" clip-path="url(#p65aa06ec18)" style="fill: none; stroke: #e3e6e9; stroke-width: 0.65; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 35.716535 399.401575 
+L 489.826772 399.401575 
+" clip-path="url(#p65aa06ec18)" style="fill: none; stroke: #e3e6e9; stroke-width: 0.65; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Arial'; text-anchor: start; fill: #287eab" x="35.716535" y="83.225197" transform="rotate(-0 35.716535 83.225197)">Gate-AppYZ-v1</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 8.4px; font-family: 'Arial'; text-anchor: start; fill: #252a30" x="35.716535" y="107.546457" transform="rotate(-0 35.716535 107.546457)">Original paired CT/MR application</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 7.6px; font-family: 'Arial'; text-anchor: start; fill: #8b949e" x="35.716535" y="129.656693" transform="rotate(-0 35.716535 129.656693)">Internal aggregate evidence; original Y/Z preserved</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Arial'; text-anchor: start; fill: #b83b50" x="35.716535" y="167.244094" transform="rotate(-0 35.716535 167.244094)">Gate-MRA-R0v2</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 8.4px; font-family: 'Arial'; text-anchor: start; fill: #252a30" x="35.716535" y="191.565354" transform="rotate(-0 35.716535 191.565354)">Fixed-recipe reconstruction</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 7.6px; font-family: 'Arial'; text-anchor: start; fill: #8b949e" x="35.716535" y="213.675591" transform="rotate(-0 35.716535 213.675591)">Single-MRA external transfer, not original LR states</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Arial'; text-anchor: start; fill: #4d927b" x="35.716535" y="251.262992" transform="rotate(-0 35.716535 251.262992)">StrokePoint-3D</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 8.4px; font-family: 'Arial'; text-anchor: start; fill: #252a30" x="35.716535" y="275.584252" transform="rotate(-0 35.716535 275.584252)">Raw MRA + strong 3D baseline</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 7.6px; font-family: 'Arial'; text-anchor: start; fill: #8b949e" x="35.716535" y="297.694488" transform="rotate(-0 35.716535 297.694488)">Short fixed pilot; full nnU-Net optimization not claimed</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Arial'; text-anchor: start; fill: #c58f24" x="35.716535" y="335.28189" transform="rotate(-0 35.716535 335.28189)">StrokePoint-Fuse</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 8.4px; font-family: 'Arial'; text-anchor: start; fill: #252a30" x="35.716535" y="359.60315" transform="rotate(-0 35.716535 359.60315)">Simple image / point fusion control</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 7.6px; font-family: 'Arial'; text-anchor: start; fill: #8b949e" x="35.716535" y="381.713386" transform="rotate(-0 35.716535 381.713386)">Same input comparison, no superiority established</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Arial'; text-anchor: start; fill: #8b949e" x="35.716535" y="419.300787" transform="rotate(-0 35.716535 419.300787)">Research / archive</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 8.4px; font-family: 'Arial'; text-anchor: start; fill: #252a30" x="35.716535" y="443.622047" transform="rotate(-0 35.716535 443.622047)">OT, routing, value and risk-head attempts</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 7.6px; font-family: 'Arial'; text-anchor: start; fill: #8b949e" x="35.716535" y="465.732283" transform="rotate(-0 35.716535 465.732283)">Negative / invalid / stopped versions remain separate</text>
+   </g>
+  </g>
+  <g id="text_16">
+   <text style="font-weight: 700; font-size: 11px; font-family: 'Arial'; text-anchor: start; fill: #252a30" x="29.593701" y="45.451266" transform="rotate(-0 29.593701 45.451266)">a</text>
+  </g>
+  <g id="text_17">
+   <text style="font-size: 9px; font-family: 'Arial'; text-anchor: start; fill: #252a30" x="47.962205" y="44.699439" transform="rotate(-0 47.962205 44.699439)">Version and evidence separation</text>
+  </g>
+  <g id="text_18">
+   <text style="font-size: 6.8px; font-family: 'Arial'; text-anchor: start; fill: #52647f" x="22.96063" y="555.860151" transform="rotate(-0 22.96063 555.860151)">Archive integrity is not scientific admission. Protected data, original thresholds and STOP remain unchanged.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p65aa06ec18">
+   <rect x="35.716535" y="56.692913" width="454.110236" height="442.204724"/>
+  </clipPath>
+ </defs>
+</svg>

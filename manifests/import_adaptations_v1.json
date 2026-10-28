@@ -1,0 +1,59 @@
+{
+  "files": [
+    {
+      "original": "src/vascutime_pointnet.py",
+      "original_sha256": "0a51f1f3893687341c61a1eeca42ba753ea492d2882e71440416d2587980d087",
+      "public_module": "strokepointpp/_frozen/pointnet.py",
+      "public_sha256": "0a51f1f3893687341c61a1eeca42ba753ea492d2882e71440416d2587980d087",
+      "change": "Only import namespace substitutions; numerical code unchanged"
+    },
+    {
+      "original": "work/c0_local_global_core_v1.py",
+      "original_sha256": "e91a253e001b09c9f185322caca7ead0e19e0fa588a591b9f740e2945105307d",
+      "public_module": "strokepointpp/_frozen/local_global.py",
+      "public_sha256": "ee06fa99608365c3e98d12f8ce3eca08220c27995dd66a144f3ac723dcee0e10",
+      "change": "Only import namespace substitutions; numerical code unchanged"
+    },
+    {
+      "original": "work/c1_sameinfo_core_v1.py",
+      "original_sha256": "4f902e927b90df4721a3f2330aa213f59e4857dda6d673be443705e2dcebc5e5",
+      "public_module": "strokepointpp/_frozen/full_information.py",
+      "public_sha256": "e273e7bd48697aecd100a66ec96bbc83c4c222b6486c31637e68e01e1abaf6b4",
+      "change": "Only import namespace substitutions; numerical code unchanged"
+    },
+    {
+      "original": "work/nc01_yz_reconstruction_v2_20261027.py",
+      "original_sha256": "5d3df858cfcb2c7dde6fa50359e2098b5f5e6ee30ee3cfe01918f98ebb2b31f0",
+      "public_module": "strokepointpp/_frozen/gate_arrays.py",
+      "public_sha256": "aa16d3b713b843f191d30a590f3db6e36aba0ac7c2033c9b72a25ff1fe5674e4",
+      "public_archive_sha256": "aa16d3b713b843f191d30a590f3db6e36aba0ac7c2033c9b72a25ff1fe5674e4",
+      "privacy_adapted": true,
+      "public_archive_byte_identical_to_original": false,
+      "change": "Publication privacy: replace ordered source-ID list with exact SHA256 binding; numerical estimators, order/count constraints and deployment operations unchanged"
+    },
+    {
+      "original": "work/nc02_spatial_models_v2_20261027.py",
+      "original_sha256": "c90b80cbf5dad3a9d6a300ffadbdb4ceab1af764a127fec8eea38842582f66d8",
+      "public_module": "strokepointpp/_frozen/spatial_models.py",
+      "public_sha256": "9eaf80106192e175407982f81d9588e7600181e53145095cd47a78b527562927",
+      "change": "Only import namespace substitutions; numerical code unchanged"
+    },
+    {
+      "original": "work/avcr1_original_evaluator_v2.py",
+      "original_sha256": "3a14836c77c8099146f9ef0527eded90baa8bc056f0f9291143f88339e2c3ae5",
+      "public_module": "strokepointpp/_frozen/evaluator.py",
+      "public_sha256": "3a14836c77c8099146f9ef0527eded90baa8bc056f0f9291143f88339e2c3ae5",
+      "change": "Only import namespace substitutions; numerical code unchanged"
+    }
+  ],
+  "gate_engine_original_source_sha256": "2b3ebe121574c0f9b3f7f977e1827d13bfc04a3bc9763b7d073ac0765eff7d7e",
+  "gate_engine_functions": [
+    "_extract",
+    "build_batch",
+    "calibrated_logits",
+    "predict_from_packets",
+    "predict_yz",
+    "validate_visible"
+  ],
+  "gate_engine_only_import_rewrites": true
+}

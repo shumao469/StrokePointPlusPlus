@@ -1,0 +1,2 @@
+# Streamlit Community Cloud discovers requirements beside its app entrypoint.
+-r ../requirements-app.txt

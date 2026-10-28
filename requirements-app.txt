@@ -1,0 +1,4 @@
+# CPU-only reviewed-results viewer. No torch, model weights or training packages.
+streamlit==1.65.0
+numpy==2.2.6
+plotly==6.9.0

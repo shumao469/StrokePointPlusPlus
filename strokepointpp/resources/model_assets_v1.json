@@ -1,0 +1,190 @@
+{
+  "assets": [
+    {
+      "asset_id": "gate_f0_s20261020_checkpoint",
+      "kind": "checkpoint",
+      "filename": "best.pt",
+      "sha256": "ebd1e50468ee985baf26f26354682d2ab2653f218285f9cffdad4a406549acb6",
+      "distributed": false
+    },
+    {
+      "asset_id": "gate_f0_s20261020_normalization",
+      "kind": "normalization",
+      "filename": "fold0_seed20261020.npz",
+      "sha256": "a2a0d0fa04a9c684191e85365b6285ba3667c383605a7b60f022302fe328ad53",
+      "distributed": false
+    },
+    {
+      "asset_id": "gate_f0_s20261020_readout",
+      "kind": "readout",
+      "filename": "fold0_seed20261020_balanced_full_real.npz",
+      "sha256": "c1731f0b57ce94b05a15b77d8c55715cff67b36cb724e13d03b49a57ad5fa03a",
+      "distributed": false
+    },
+    {
+      "asset_id": "gate_f0_s20261021_checkpoint",
+      "kind": "checkpoint",
+      "filename": "best.pt",
+      "sha256": "706f30379902c627cecf295b8c1e3844ae49b65565591ae92be09b2f92d21094",
+      "distributed": false
+    },
+    {
+      "asset_id": "gate_f0_s20261021_normalization",
+      "kind": "normalization",
+      "filename": "fold0_seed20261021.npz",
+      "sha256": "a7d23a4070ea81328ffcd7ccc708bb456885e25387df199dcbc5204eac4d3f3c",
+      "distributed": false
+    },
+    {
+      "asset_id": "gate_f0_s20261021_readout",
+      "kind": "readout",
+      "filename": "fold0_seed20261021_balanced_full_real.npz",
+      "sha256": "b0e8752de7c6b0f98ddb6f9896e2a2dcb175a3f57f4f114fb1effcf7940d575b",
+      "distributed": false
+    },
+    {
+      "asset_id": "gate_f1_s20261020_checkpoint",
+      "kind": "checkpoint",
+      "filename": "best.pt",
+      "sha256": "2e08fefbd1452b28bca68f117d4b163da7936fdd9bc8000844c42248ea271e8a",
+      "distributed": false
+    },
+    {
+      "asset_id": "gate_f1_s20261020_normalization",
+      "kind": "normalization",
+      "filename": "fold1_seed20261020.npz",
+      "sha256": "4de50632cd8551785dfa54af4ffb09f77f600fd814f71ffd069244b0ad683cba",
+      "distributed": false
+    },
+    {
+      "asset_id": "gate_f1_s20261020_readout",
+      "kind": "readout",
+      "filename": "fold1_seed20261020_balanced_full_real.npz",
+      "sha256": "0dde34288d0d73f63daeee0833cfa238cab00db228c292de6b2da6774d8cdbf8",
+      "distributed": false
+    },
+    {
+      "asset_id": "gate_f1_s20261021_checkpoint",
+      "kind": "checkpoint",
+      "filename": "best.pt",
+      "sha256": "98141880e79e5a31b1fbeb06e6b44dfe09608c3c105b713ade9fcf6344ca4e51",
+      "distributed": false
+    },
+    {
+      "asset_id": "gate_f1_s20261021_normalization",
+      "kind": "normalization",
+      "filename": "fold1_seed20261021.npz",
+      "sha256": "cfb13775d104396dc93775b25e7d46ad9449c4b036ce4df174265737da8ee45d",
+      "distributed": false
+    },
+    {
+      "asset_id": "gate_f1_s20261021_readout",
+      "kind": "readout",
+      "filename": "fold1_seed20261021_balanced_full_real.npz",
+      "sha256": "97d1e1b7a86d1d5cf5f07277883051da20f0d6226376e543f0473cc085e1b40a",
+      "distributed": false
+    },
+    {
+      "asset_id": "gate_projection",
+      "kind": "projection",
+      "filename": "projections.npz",
+      "sha256": "21348b6e73fc52d5362c0569fef4d189c08ae4fe19c1ad9c46cfcd48b87ffbdd",
+      "distributed": false
+    },
+    {
+      "asset_id": "gate_priors",
+      "kind": "fixed_fitted_asset",
+      "filename": "fold_priors_v1.json",
+      "sha256": "c137908ff7f5b146ce68918465d0353af7e338dd683521c36fe75a2d59399c1b",
+      "distributed": false
+    },
+    {
+      "asset_id": "gate_pcom_head",
+      "kind": "fixed_fitted_asset",
+      "filename": "pcom_pipeline_v1.json",
+      "sha256": "564dce994568d52fb4822bffcbbf94b3412602b5fa8772a459b98b2f69b3c172",
+      "distributed": false
+    },
+    {
+      "asset_id": "gate_a2_head",
+      "kind": "fixed_fitted_asset",
+      "filename": "a2_pipeline_v1.json",
+      "sha256": "f99dd58588230aa5ffa084d4158e5bee2541ad356e56d9b0d49e752dbd979464",
+      "distributed": false
+    },
+    {
+      "asset_id": "spatial_f0_BASE3D",
+      "kind": "short_pilot_spatial_checkpoint",
+      "filename": "model_final.pt",
+      "sha256": "6f0c983cb778aec324a10624c1e91385b42d40726d20d7c9b53a469c7ee7daf1",
+      "distributed": false
+    },
+    {
+      "asset_id": "spatial_f0_CONCAT",
+      "kind": "short_pilot_spatial_checkpoint",
+      "filename": "model_final.pt",
+      "sha256": "0674cc2f17f1651b136bc7273c4ff585ff0fd532dea4fda3d57b9ea06c55d965",
+      "distributed": false
+    },
+    {
+      "asset_id": "spatial_f0_JOINT",
+      "kind": "short_pilot_spatial_checkpoint",
+      "filename": "model_final.pt",
+      "sha256": "961618e0d52ae0292c3e3c2a5844eaf4b76f14544ba35602a5ed68091f6be0b7",
+      "distributed": false
+    },
+    {
+      "asset_id": "spatial_f0_NO_FEEDBACK",
+      "kind": "short_pilot_spatial_checkpoint",
+      "filename": "model_final.pt",
+      "sha256": "4a9ecaba6aa2b94bbdc982a9efec1fc086c5b929c8214f1a8c97a2258601e19e",
+      "distributed": false
+    },
+    {
+      "asset_id": "spatial_f1_BASE3D",
+      "kind": "short_pilot_spatial_checkpoint",
+      "filename": "model_final.pt",
+      "sha256": "30c7168b62eda4ed5195f9bca46cb9e95050f6bd724cd8332dc142e3c1becc40",
+      "distributed": false
+    },
+    {
+      "asset_id": "spatial_f1_CONCAT",
+      "kind": "short_pilot_spatial_checkpoint",
+      "filename": "model_final.pt",
+      "sha256": "81af4d1db88d6f1a6be5ca5245c0e4e3286b65670858bb209b7051fb8f7230ea",
+      "distributed": false
+    },
+    {
+      "asset_id": "spatial_f1_JOINT",
+      "kind": "short_pilot_spatial_checkpoint",
+      "filename": "model_final.pt",
+      "sha256": "7379310144c125f767e461d59d553ba17371692063648a9bb72ae149cb261786",
+      "distributed": false
+    },
+    {
+      "asset_id": "spatial_f1_NO_FEEDBACK",
+      "kind": "short_pilot_spatial_checkpoint",
+      "filename": "model_final.pt",
+      "sha256": "79b22850aa44cb4a5794a3abf7a66364bc416020a125595e0b71a41c36501196",
+      "distributed": false
+    }
+  ],
+  "labels": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    15
+  ],
+  "gate_recipe_protocol_sha256": "0850740ff61234a58637591c88c852bc1dcd6a47e61f28c0253f73f90744cca3",
+  "deployment_variant": "Gate-MRA-R0v2: single MRA, original4-source latent mean, not original pairedCTMR input",
+  "no_weights_or_scalers_distributed": true
+}

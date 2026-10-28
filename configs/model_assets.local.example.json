@@ -1,0 +1,28 @@
+{
+  "assets": {
+    "gate_f0_s20261020_checkpoint": "${ASSET_ROOT}/gate_f0_s20261020_checkpoint/best.pt",
+    "gate_f0_s20261020_normalization": "${ASSET_ROOT}/gate_f0_s20261020_normalization/fold0_seed20261020.npz",
+    "gate_f0_s20261020_readout": "${ASSET_ROOT}/gate_f0_s20261020_readout/fold0_seed20261020_balanced_full_real.npz",
+    "gate_f0_s20261021_checkpoint": "${ASSET_ROOT}/gate_f0_s20261021_checkpoint/best.pt",
+    "gate_f0_s20261021_normalization": "${ASSET_ROOT}/gate_f0_s20261021_normalization/fold0_seed20261021.npz",
+    "gate_f0_s20261021_readout": "${ASSET_ROOT}/gate_f0_s20261021_readout/fold0_seed20261021_balanced_full_real.npz",
+    "gate_f1_s20261020_checkpoint": "${ASSET_ROOT}/gate_f1_s20261020_checkpoint/best.pt",
+    "gate_f1_s20261020_normalization": "${ASSET_ROOT}/gate_f1_s20261020_normalization/fold1_seed20261020.npz",
+    "gate_f1_s20261020_readout": "${ASSET_ROOT}/gate_f1_s20261020_readout/fold1_seed20261020_balanced_full_real.npz",
+    "gate_f1_s20261021_checkpoint": "${ASSET_ROOT}/gate_f1_s20261021_checkpoint/best.pt",
+    "gate_f1_s20261021_normalization": "${ASSET_ROOT}/gate_f1_s20261021_normalization/fold1_seed20261021.npz",
+    "gate_f1_s20261021_readout": "${ASSET_ROOT}/gate_f1_s20261021_readout/fold1_seed20261021_balanced_full_real.npz",
+    "gate_projection": "${ASSET_ROOT}/gate_projection/projections.npz",
+    "gate_priors": "${ASSET_ROOT}/gate_priors/fold_priors_v1.json",
+    "gate_pcom_head": "${ASSET_ROOT}/gate_pcom_head/pcom_pipeline_v1.json",
+    "gate_a2_head": "${ASSET_ROOT}/gate_a2_head/a2_pipeline_v1.json",
+    "spatial_f0_BASE3D": "${ASSET_ROOT}/spatial_f0_BASE3D/model_final.pt",
+    "spatial_f0_CONCAT": "${ASSET_ROOT}/spatial_f0_CONCAT/model_final.pt",
+    "spatial_f0_JOINT": "${ASSET_ROOT}/spatial_f0_JOINT/model_final.pt",
+    "spatial_f0_NO_FEEDBACK": "${ASSET_ROOT}/spatial_f0_NO_FEEDBACK/model_final.pt",
+    "spatial_f1_BASE3D": "${ASSET_ROOT}/spatial_f1_BASE3D/model_final.pt",
+    "spatial_f1_CONCAT": "${ASSET_ROOT}/spatial_f1_CONCAT/model_final.pt",
+    "spatial_f1_JOINT": "${ASSET_ROOT}/spatial_f1_JOINT/model_final.pt",
+    "spatial_f1_NO_FEEDBACK": "${ASSET_ROOT}/spatial_f1_NO_FEEDBACK/model_final.pt"
+  }
+}

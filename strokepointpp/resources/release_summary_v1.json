@@ -1,0 +1,21 @@
+{
+  "name": "StrokePoint++",
+  "chinese_name": "卒中脑血管点云识别工具箱",
+  "version": "0.1.0.dev0",
+  "purpose": "Research cerebral vessel anatomical labeling, not validated stroke diagnosis/prognosis",
+  "components": {
+    "Gate-AppYZ-v1": "Sealed historical pairedCTMR internal65 application; not modified",
+    "Gate-MRA-R0v2": "Fixed-recipe reconstructed heads; single-MRA external transfer, not original fitted state recovery",
+    "StrokePoint-3D": "Enhanced3D U-Net short fixed pilot, not fully trained complete nnU-Net",
+    "StrokePoint-Fuse": "Same-input simple concatenation comparator, not a proven new mechanism",
+    "research/archive": "Joint/feedback and previous negative studies; original STOP retained"
+  },
+  "clinical_ready": false,
+  "NC_ready": false,
+  "NMI_ready": false,
+  "original_STOP_preserved": true,
+  "patient_data_in_bundle": false,
+  "fitted_assets_in_bundle": false,
+  "automatic_training": false,
+  "reproducibility_scope": "Executable parameterized inference/array algorithms with caller-owned exact assets and prepared visible inputs; no turnkey raw-image preprocessing validation claimed"
+}

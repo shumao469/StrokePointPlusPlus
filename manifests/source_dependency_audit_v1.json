@@ -1,0 +1,688 @@
+{
+  "files": [
+    {
+      "relative_source": "src/vascutime_pointnet.py",
+      "sha256": "0a51f1f3893687341c61a1eeca42ba753ea492d2882e71440416d2587980d087",
+      "bytes": 4211,
+      "imports": [
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "relative_source": "work/c0_local_global_core_v1.py",
+      "sha256": "e91a253e001b09c9f185322caca7ead0e19e0fa588a591b9f740e2945105307d",
+      "bytes": 2882,
+      "imports": [
+        "copy",
+        "numpy",
+        "src.vascutime_pointnet",
+        "torch"
+      ]
+    },
+    {
+      "relative_source": "work/c1_sameinfo_core_v1.py",
+      "sha256": "4f902e927b90df4721a3f2330aa213f59e4857dda6d673be443705e2dcebc5e5",
+      "bytes": 5966,
+      "imports": [
+        "numpy",
+        "src.vascutime_pointnet",
+        "torch",
+        "work.c0_local_global_core_v1"
+      ]
+    },
+    {
+      "relative_source": "work/nc01_yz_reconstruction_v2_20261027.py",
+      "sha256": "5d3df858cfcb2c7dde6fa50359e2098b5f5e6ee30ee3cfe01918f98ebb2b31f0",
+      "bytes": 23851,
+      "imports": [
+        "__future__",
+        "hashlib",
+        "numpy",
+        "platform",
+        "scipy",
+        "scipy.special",
+        "sklearn",
+        "sklearn.cluster",
+        "sklearn.exceptions",
+        "sklearn.linear_model",
+        "sklearn.preprocessing",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "relative_source": "work/nc02_spatial_models_v2_20261027.py",
+      "sha256": "c90b80cbf5dad3a9d6a300ffadbdb4ceab1af764a127fec8eea38842582f66d8",
+      "bytes": 25043,
+      "imports": [
+        "__future__",
+        "dynamic_network_architectures.architectures.unet",
+        "numpy",
+        "src.vascutime_pointnet",
+        "torch",
+        "torch.nn",
+        "typing"
+      ]
+    },
+    {
+      "relative_source": "work/avcr1_original_evaluator_v2.py",
+      "sha256": "3a14836c77c8099146f9ef0527eded90baa8bc056f0f9291143f88339e2c3ae5",
+      "bytes": 8840,
+      "imports": [
+        "json",
+        "numpy"
+      ]
+    },
+    {
+      "relative_source": "work/nc01_yz_reconstruction_runner_v2_20261027.py",
+      "sha256": "5bc466466e1b871fc88b5dbccbfdab6a77fcf08eef07f4f5b0abb4fc1225d9a7",
+      "bytes": 23284,
+      "imports": [
+        "argparse",
+        "datetime",
+        "hashlib",
+        "json",
+        "nc01_yz_reconstruction_v2_20261027",
+        "nibabel",
+        "numpy",
+        "os",
+        "pathlib",
+        "signal",
+        "src.vascutime_pointnet",
+        "sys",
+        "time",
+        "torch",
+        "traceback",
+        "work.c1_sameinfo_core_v1"
+      ]
+    },
+    {
+      "relative_source": "work/nc01_spatial_mapping_20261027.py",
+      "sha256": "d4229db26e418cfee839c75360ca69992320ea54a0410668cb8cf7b073ed0993",
+      "bytes": 18977,
+      "imports": [
+        "argparse",
+        "datetime",
+        "hashlib",
+        "json",
+        "nibabel",
+        "numpy",
+        "os",
+        "pathlib",
+        "scipy.ndimage",
+        "signal",
+        "sys",
+        "time",
+        "torch",
+        "torch.nn.functional",
+        "traceback"
+      ]
+    },
+    {
+      "relative_source": "work/nc02_data_20261027.py",
+      "sha256": "76781aba9f6abea662f22e2a8a3029540eefe97e6110b04681a6d26d215d086e",
+      "bytes": 17342,
+      "imports": [
+        "argparse",
+        "datetime",
+        "hashlib",
+        "json",
+        "nibabel",
+        "numpy",
+        "os",
+        "pathlib",
+        "scipy.ndimage",
+        "signal",
+        "src.vascutime_pointnet",
+        "sys",
+        "time",
+        "traceback"
+      ]
+    },
+    {
+      "relative_source": "work/nc02_train_20261027.py",
+      "sha256": "4b62f3d4ed86972acbf5d5570a243573aa02003be81d060f3275bd384024f0d5",
+      "bytes": 34357,
+      "imports": [
+        "argparse",
+        "dynamic_network_architectures.architectures.unet",
+        "hashlib",
+        "importlib.metadata",
+        "json",
+        "math",
+        "nc02_data_20261027",
+        "nc02_spatial_models_v2_20261027",
+        "numpy",
+        "os",
+        "pathlib",
+        "shutil",
+        "signal",
+        "subprocess",
+        "sys",
+        "time",
+        "torch",
+        "traceback"
+      ]
+    },
+    {
+      "relative_source": "work/nc02_evaluate_20261027.py",
+      "sha256": "bc6afec2d76e9ef11618681357c022951cc2256e7467f8c5f859082dd5e2e9e7",
+      "bytes": 35717,
+      "imports": [
+        "__future__",
+        "avcr1_original_evaluator_v2",
+        "datetime",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "scipy.stats",
+        "sys",
+        "time",
+        "traceback"
+      ]
+    },
+    {
+      "relative_source": "work/nc02_independent_review_20261027.py",
+      "sha256": "1619d0c375d2cbbc26780353ea2ac833ff7d7f8d0f28f33246182e4ec624d4ce",
+      "bytes": 29720,
+      "imports": [
+        "argparse",
+        "datetime",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "scipy.stats",
+        "time"
+      ]
+    },
+    {
+      "relative_source": "work/nc02_diag_interventions_20261027.py",
+      "sha256": "d403b662060d5a0e6de8f7440081b9749122caf22cb63507c04907a08c1c0d6b",
+      "bytes": 17463,
+      "imports": [
+        "__future__",
+        "argparse",
+        "hashlib",
+        "json",
+        "nc02_spatial_models_v2_20261027",
+        "numpy",
+        "os",
+        "pathlib",
+        "signal",
+        "sys",
+        "time",
+        "torch",
+        "traceback"
+      ]
+    },
+    {
+      "relative_source": "work/nc02_diag_trajectory_20261027.py",
+      "sha256": "d339fff66c892c5c0e23c213d4fcb0272a79a19004c241c2c38eeea33194bf4d",
+      "bytes": 7159,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "pathlib",
+        "statistics",
+        "time"
+      ]
+    },
+    {
+      "relative_source": "work/nc02_diag_patient_statistics_20261027.py",
+      "sha256": "ec07b1c11c814a29bac1132f4d1d2ff97992de6cd8957de2826af69e80e28da3",
+      "bytes": 10188,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "pathlib",
+        "time"
+      ]
+    },
+    {
+      "relative_source": "work/nc02_diag_counterfactual_statistics_20261027.py",
+      "sha256": "c935fd6cfe36cd3a699be2f7b7a3c44d7d066d82e9aa7703369e0e4ac4364fe9",
+      "bytes": 8968,
+      "imports": [
+        "avcr1_original_evaluator_v2",
+        "hashlib",
+        "json",
+        "numpy",
+        "pathlib",
+        "time"
+      ]
+    },
+    {
+      "relative_source": "work/nc03_yz_interface_20261028.py",
+      "sha256": "f349c85cf34cf9c889cf7dc798ff1b12581aa03c8af11aadee775c35b15d0c12",
+      "bytes": 20082,
+      "imports": [
+        "__future__",
+        "argparse",
+        "hashlib",
+        "json",
+        "nc01_yz_reconstruction_v2_20261027",
+        "numpy",
+        "pathlib",
+        "scipy.special",
+        "src.vascutime_pointnet",
+        "torch",
+        "typing",
+        "work.c1_sameinfo_core_v1"
+      ]
+    },
+    {
+      "relative_source": "work/nc03_yz_interface_v2_20261028.py",
+      "sha256": "7747e316ed073c12c3747d29ad815012eca00dfce1419fda6a6e8b6ed7e71a2a",
+      "bytes": 23556,
+      "imports": [
+        "__future__",
+        "argparse",
+        "hashlib",
+        "json",
+        "nc01_yz_reconstruction_v2_20261027",
+        "numpy",
+        "pathlib",
+        "scipy.special",
+        "src.vascutime_pointnet",
+        "torch",
+        "typing",
+        "work.c1_sameinfo_core_v1"
+      ]
+    },
+    {
+      "relative_source": "work/nc03_external_dev_20261028.py",
+      "sha256": "ebab957c6220dd9962b6b4388cfeb7484edd61d35721fed04e60953847f4e61a",
+      "bytes": 35079,
+      "imports": [
+        "argparse",
+        "avcr1_original_evaluator_v2",
+        "datetime",
+        "hashlib",
+        "json",
+        "nc02_data_20261027",
+        "nc02_spatial_models_v2_20261027",
+        "nc03_yz_interface_20261028",
+        "nibabel",
+        "numpy",
+        "os",
+        "pathlib",
+        "scipy",
+        "scipy.sparse.csgraph",
+        "scipy.stats",
+        "signal",
+        "src.vascutime_pointnet",
+        "subprocess",
+        "sys",
+        "time",
+        "torch",
+        "traceback",
+        "work.a0_geometry_core_v1",
+        "work.b0_support_context_core_v1",
+        "work.c1_sameinfo_core_v1"
+      ]
+    },
+    {
+      "relative_source": "work/nc03_external_dev_resume_v3_20261028.py",
+      "sha256": "913304153151585d6b6c9260b15c2d0e7f97950d68a9dea4c07619a52d790a67",
+      "bytes": 32096,
+      "imports": [
+        "argparse",
+        "avcr1_original_evaluator_v2",
+        "copy",
+        "datetime",
+        "hashlib",
+        "json",
+        "nc02_data_20261027",
+        "nc02_spatial_models_v2_20261027",
+        "nc03_yz_interface_v2_20261028",
+        "nibabel",
+        "numpy",
+        "os",
+        "pathlib",
+        "scipy",
+        "scipy.sparse.csgraph",
+        "scipy.stats",
+        "signal",
+        "src.vascutime_pointnet",
+        "subprocess",
+        "sys",
+        "time",
+        "torch",
+        "traceback",
+        "work.a0_geometry_core_v1",
+        "work.b0_support_context_core_v1",
+        "work.c1_sameinfo_core_v1"
+      ]
+    },
+    {
+      "relative_source": "work/nc03_external_independent_review_20261028.py",
+      "sha256": "b2076f02b81883126dc569fff5bf1f5101488f48ba93cf998d13862a66caba99",
+      "bytes": 21362,
+      "imports": [
+        "argparse",
+        "ast",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "scipy.stats",
+        "sys",
+        "time"
+      ]
+    },
+    {
+      "relative_source": "work/nc04_yz_final_interface_20261028.py",
+      "sha256": "2b3ebe121574c0f9b3f7f977e1827d13bfc04a3bc9763b7d073ac0765eff7d7e",
+      "bytes": 23540,
+      "imports": [
+        "__future__",
+        "argparse",
+        "hashlib",
+        "json",
+        "nc01_yz_reconstruction_v2_20261027",
+        "numpy",
+        "pathlib",
+        "scipy.special",
+        "src.vascutime_pointnet",
+        "torch",
+        "typing",
+        "work.c1_sameinfo_core_v1"
+      ]
+    },
+    {
+      "relative_source": "work/nc04_final_evaluation_20261028.py",
+      "sha256": "990cc358f2bb5a933027ffaa10ff64d84710ceef8636b577869922384b7e5133",
+      "bytes": 37812,
+      "imports": [
+        "argparse",
+        "avcr1_original_evaluator_v2",
+        "copy",
+        "datetime",
+        "hashlib",
+        "json",
+        "nc02_data_20261027",
+        "nc02_spatial_models_v2_20261027",
+        "nc04_ixi_acquisition_20261028",
+        "nc04_yz_final_interface_20261028",
+        "nibabel",
+        "numpy",
+        "os",
+        "pathlib",
+        "scipy",
+        "scipy.sparse.csgraph",
+        "scipy.stats",
+        "signal",
+        "src.vascutime_pointnet",
+        "subprocess",
+        "sys",
+        "time",
+        "torch",
+        "traceback",
+        "work.a0_geometry_core_v1",
+        "work.b0_support_context_core_v1",
+        "work.c1_sameinfo_core_v1"
+      ]
+    },
+    {
+      "relative_source": "work/nc04_final_independent_review_20261028.py",
+      "sha256": "643a70ad693d28cd11cc07982166f1cb534c245806dfd6e1964ec203eeaf7666",
+      "bytes": 33161,
+      "imports": [
+        "argparse",
+        "ast",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "scipy.stats",
+        "stat",
+        "sys",
+        "time",
+        "zipfile",
+        "zlib"
+      ]
+    },
+    {
+      "relative_source": "work/nc04_transport_resume_driver_20261028.py",
+      "sha256": "fd0bd2d97de5ec743de58d8d6df352792ad13113b8d367e3aec3f0c013c3a217",
+      "bytes": 9874,
+      "imports": [
+        "argparse",
+        "copy",
+        "json",
+        "nc04_final_evaluation_20261028",
+        "nc04_ixi_transport_resume_20261028",
+        "os",
+        "pathlib",
+        "signal",
+        "subprocess",
+        "sys",
+        "time",
+        "traceback"
+      ]
+    },
+    {
+      "relative_source": "work/nc04_transport_extension_driver_20261028.py",
+      "sha256": "d34f0ef2d0b126dca4cd6c48f1c91817e07caba5d646ace9676140fbcd2ee15b",
+      "bytes": 10241,
+      "imports": [
+        "argparse",
+        "copy",
+        "json",
+        "nc04_final_evaluation_20261028",
+        "nc04_ixi_transport_extension_20261028",
+        "os",
+        "pathlib",
+        "signal",
+        "subprocess",
+        "sys",
+        "time",
+        "traceback"
+      ]
+    },
+    {
+      "relative_source": "work/nc04_ixi_transport_resume_20261028.py",
+      "sha256": "d6e1f043a9f7168264cbc4d6e3bd11d20570f92d1de19b2e7e8cc6a4cb42747b",
+      "bytes": 28484,
+      "imports": [
+        "__future__",
+        "argparse",
+        "concurrent.futures",
+        "datetime",
+        "hashlib",
+        "json",
+        "math",
+        "os",
+        "pathlib",
+        "re",
+        "shutil",
+        "signal",
+        "stat",
+        "sys",
+        "threading",
+        "time",
+        "urllib.parse",
+        "urllib.request",
+        "uuid",
+        "zipfile",
+        "zlib"
+      ]
+    },
+    {
+      "relative_source": "work/nc04_ixi_transport_extension_20261028.py",
+      "sha256": "af3af9f708bf39d87995b5defbe525e04de1b3ae0cdb3e2627c80af895dcd0ea",
+      "bytes": 30556,
+      "imports": [
+        "__future__",
+        "argparse",
+        "concurrent.futures",
+        "datetime",
+        "hashlib",
+        "json",
+        "math",
+        "os",
+        "pathlib",
+        "re",
+        "shutil",
+        "signal",
+        "stat",
+        "sys",
+        "threading",
+        "time",
+        "urllib.parse",
+        "urllib.request",
+        "uuid",
+        "zipfile",
+        "zlib"
+      ]
+    },
+    {
+      "relative_source": "work/nc04_final_source_audit_20261028.py",
+      "sha256": "2df83b824731f7d770724126307d3089ccf115470f8b2b9b9bb7951f4f021234",
+      "bytes": 15438,
+      "imports": [
+        "datetime",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "re",
+        "time"
+      ]
+    },
+    {
+      "relative_source": "work/nc04_dev_final_summary_20261028.py",
+      "sha256": "a87e4e5da0334e19cb08ce2e4b96d4a42e582ea20e93e1058e1b27b927f4c52a",
+      "bytes": 11356,
+      "imports": [
+        "argparse",
+        "datetime",
+        "hashlib",
+        "json",
+        "math",
+        "pathlib",
+        "scipy.stats",
+        "time"
+      ]
+    },
+    {
+      "relative_source": "work/nc04_final_decision_receipt_20261028.py",
+      "sha256": "e50fa001ef3dd044ff4bd5546ba3499f05f5f77425062bdebb0671f46361ceb9",
+      "bytes": 8246,
+      "imports": [
+        "datetime",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib"
+      ]
+    },
+    {
+      "relative_source": "work/a0_geometry_core_v1.py",
+      "sha256": "475f9a2420cab6fded53b97ab35029425df70f2bf4fdcdba05cb75fd8d445d00",
+      "bytes": 8435,
+      "imports": [
+        "numpy",
+        "scipy",
+        "scipy.sparse.csgraph",
+        "scipy.spatial",
+        "scipy.special",
+        "src.vascutime_pointnet"
+      ]
+    },
+    {
+      "relative_source": "work/b0_support_context_core_v1.py",
+      "sha256": "337c665f88837531196d396f7c06268b360186c64c697970f2af1fa1c88c95b0",
+      "bytes": 2831,
+      "imports": [
+        "numpy",
+        "src.vascutime_pointnet",
+        "torch"
+      ]
+    },
+    {
+      "relative_source": "work/nc04_ixi_acquisition_20261028.py",
+      "sha256": "4906bd634521ed263a647f9e3dc9d0765b3041fb16682b704372d55dd7fb0b5a",
+      "bytes": 25922,
+      "imports": [
+        "__future__",
+        "argparse",
+        "concurrent.futures",
+        "datetime",
+        "hashlib",
+        "json",
+        "math",
+        "os",
+        "pathlib",
+        "re",
+        "shutil",
+        "signal",
+        "stat",
+        "sys",
+        "threading",
+        "time",
+        "urllib.parse",
+        "urllib.request",
+        "uuid",
+        "zipfile",
+        "zlib"
+      ]
+    }
+  ],
+  "external_import_roots": [
+    "__future__",
+    "argparse",
+    "ast",
+    "concurrent",
+    "copy",
+    "datetime",
+    "dynamic_network_architectures",
+    "hashlib",
+    "importlib",
+    "json",
+    "math",
+    "nibabel",
+    "numpy",
+    "os",
+    "pathlib",
+    "platform",
+    "re",
+    "scipy",
+    "shutil",
+    "signal",
+    "sklearn",
+    "stat",
+    "statistics",
+    "subprocess",
+    "sys",
+    "threading",
+    "time",
+    "torch",
+    "traceback",
+    "typing",
+    "urllib",
+    "uuid",
+    "warnings",
+    "zipfile",
+    "zlib"
+  ],
+  "private_archive_excluded_from_public_zip": true,
+  "original_sources_byte_preserved": true
+}

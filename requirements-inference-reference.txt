@@ -1,0 +1,9 @@
+# Reference study/inference environment: Python3.10.
+# Install the appropriate official PyTorch CPU/CUDA build separately if needed;
+# the recorded study CUDA build was torch2.9.1+cu128. No driver install is implied.
+numpy==1.26.4
+scipy==1.10.1
+scikit-learn==1.7.2
+torch==2.9.1
+dynamic-network-architectures==0.4.2
+nibabel==5.3.3
