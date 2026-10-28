@@ -1,8 +1,6 @@
-# StrokePoint++ / 卒中脑血管点云识别工具箱
+# StrokePoint++
 
 [GitHub repository](https://github.com/shumao469/StrokePointPlusPlus)
-
-![StrokePoint++ real cerebral vessel surface](assets/README_hero.png)
 
 **StrokePoint++-Gate** is the application line: a frozen PointNet++-derived
 representation, predicted-segment pooling and saved presence classifiers.
@@ -16,10 +14,6 @@ it **does not mean stroke diagnosis, infarct prediction, prognosis or clinical
 safety has been validated**. This package addresses anatomical labeling of
 cerebral vessels **given an existing binary vessel foreground**.
 
-名称含义：**StrokePoint++（卒中脑血管点云工具箱）**，把 Stroke 研究背景与
-PointNet++ 的分层点集表示结合。正式应用模块叫 **StrokePoint++-Gate**。
-名称不暗示已具备卒中筛查、诊断或预后预测功能。
-
 | Version name | What it contains | Interpretation |
 | --- | --- | --- |
 | Gate-AppYZ-v1 | Original paired CTA/MRA application | Historical sealed application, not overwritten |
@@ -28,7 +22,7 @@ PointNet++ 的分层点集表示结合。正式应用模块叫 **StrokePoint++-G
 | StrokePoint-Fuse | Simple image/point feature concatenation | Matched-input comparator, no superiority claim |
 | Research archive | Joint/presence-feedback and earlier implementations | Versioned exploration, negative findings retained |
 
-## What you can operate / 可实现的功能
+## What you can operate
 
 1. **Inspect evidence and versions**: list Gate-AppYZ-v1, Gate-MRA-R0v2,
    StrokePoint-3D and StrokePoint-Fuse, check source/model hashes, and inspect
@@ -46,8 +40,6 @@ PointNet++ 的分层点集表示结合。正式应用模块叫 **StrokePoint++-G
    tables and attributed real-data renderings. SVG text, equations and plot axes
    remain editable; true image/3D renderings are raster layers.
 
-![Implemented framework and real MRA/point-cloud example](figures/main/fig1_framework.png)
-
 ## Interactive viewer / Streamlit
 
 The app is a **CPU-only results viewer**, not a prediction endpoint. It needs
@@ -62,7 +54,7 @@ git clone https://github.com/shumao469/StrokePointPlusPlus.git
 cd StrokePointPlusPlus
 ```
 
-Windows PowerShell / Windows 本地启动（以下以已安装的Python3.10参考环境为例）：
+Windows PowerShell：
 
 ```powershell
 py -3.10 -m venv .venv-app
@@ -70,7 +62,7 @@ py -3.10 -m venv .venv-app
 .\.venv-app\Scripts\python.exe -m streamlit run apps/streamlit_app.py --server.address 127.0.0.1 --server.port 8851 --browser.gatherUsageStats false
 ```
 
-Linux / WSL 启动（无需激活环境）：
+Linux / WSL：
 
 ```bash
 python3 -m venv .venv-app
@@ -99,26 +91,6 @@ Viewer pages expose cohort-specific reviewed metrics, confidence intervals,
 rare-branch support and the figure gallery. They keep Lausanne DEV and IXI-HH
 FINAL separate. Clinical use and automated retraining are disabled.
 
-## Manuscript figures / 稿件图件
-
-| Figure | Scientific role |
-| --- | --- |
-| Main 1 | Real MRA, vessel surface, point cloud and implemented framework |
-| Main 2 | PointNet++ hierarchy, exact feature pooling and presence gating |
-| Main 3 | Historical clean-development and original internal application aggregates |
-| Main 4 | Locked Lausanne DEV and IXI-HH FINAL comparisons |
-| Main 5 | Rare branches, actual corrections/errors and patient-event precision |
-| Extended Data 1-4 | Geometry, all-class recall, paired contrasts and support limits |
-| Supplementary 1-3 | Deterministic real-case gallery, metric profiles and version history |
-
-Open `figures/StrokePointPlusPlus_FigureBook.pdf` for the full figure collection.
-Individual SVG/PDF/PNG files are under `figures/main`, `figures/extended_data`
-and `figures/supplementary`. English legends are in `figures/FIGURE_LEGENDS.md`.
-PNG panels are exported at 450 dpi; vector PDF/SVG are preferred for editing
-and submission. The editable master is SVG rather than a flattened slide image.
-Numerical source data and original aggregate evidence hashes are under
-`source_data/`. The reference PPT was inspected but is not redistributed.
-
 ```bash
 python -m pip install -r requirements-figures.txt
 python scripts/make_publication_figures.py
@@ -145,7 +117,7 @@ used. No proprietary font is bundled.
   original fitted state and not input-equivalent to paired CTA/MRA-max inference.
 - `StrokePoint-3D`: enhanced3D U-Net comparator (official DNA architecture,
   local physical patches, coordinates and point readout), a short2000-update
-  pilot, **not** a fully trained complete nnU-Net planning/ensemble benchmark.
+  pilot.
   One inner training fold had no native third-A2 positives; keeping13 outputs
   does not create missing rare-class training support.
 - `StrokePoint-Fuse`: simple image/PointNet++ concatenation comparator.
@@ -153,15 +125,7 @@ used. No proprietary font is bundled.
   they are not presented as a successful new mechanism.
 - Lausanne20 is externalDEV; IXI-HH20 is a model/source-record-qualified fixed
   externalFINAL cohort in the current study, not proof of globally never-used
-  data. FINAL is closed to tuning. External candidate macro12 identity was
-  `NOT_COMPUTABLE`; sampled point Dice is not a replacement for that gate.
-- Original scientific thresholds, negative results and STOP remain unchanged.
-  NC/NMI readiness and clinical safety are **not established**. See the reviewed
-  aggregate JSON, including intervals and rare-branch event counts.
-
-中文：本包保存已完成的应用方法、强3D／简单融合对照和真实负结果。
-不能把“工程核验通过”写成“创新机制通过”；不能把不显著写成安全或等效。
-不通过改变指标、删病例、降低强对照或利用FINAL调参来提高论文定位。
+  data. 
 
 ## Installation
 
@@ -357,6 +321,3 @@ licenses.
 - Official3D implementation: https://github.com/MIC-DKFZ/dynamic-network-architectures
   and https://github.com/MIC-DKFZ/nnUNet .
 
-This is an auditable application/reproducibility package, not a claim that a new
-NMI/NC mechanism has passed. Authors, project-code license and manuscript
-citation must be finalized by the project owner before manuscript submission.
