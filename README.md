@@ -104,7 +104,7 @@ If Arial is available outside the package, optionally set `STROKEPOINT_FONT_DIR`
 to that authorized font directory before rebuilding; otherwise DejaVu Sans is
 used. No proprietary font is bundled.
 
-## Scientific status / 目前结论
+## Functions
 
 - `Gate-AppYZ-v1`: sealed historical application with paired CTA/MRA inputs.
   In its internal cohort, native-absence FPR decreased approximately
