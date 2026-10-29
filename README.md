@@ -1,8 +1,8 @@
-# StrokePoint++
+# StrokeVasc
 
 [GitHub repository](https://github.com/shumao469/StrokePointPlusPlus)
 
-**StrokePoint++-Gate** is the application line: a frozen PointNet++-derived
+**StrokeVasc-Gate** is the application line: a frozen PointNet++-derived
 representation, predicted-segment pooling and saved presence classifiers.
 The package also contains the stronger raw-MRA 3D comparator, a simple fusion
 control, and explicitly named research versions. Real vessel images and point
@@ -13,6 +13,12 @@ Research engineering release, version `0.1.0.dev0`. The name is a project label:
 it **does not mean stroke diagnosis, infarct prediction, prognosis or clinical
 safety has been validated**. This package addresses anatomical labeling of
 cerebral vessels **given an existing binary vessel foreground**.
+
+**StrokeVasc** is the manuscript and display name for this project, emphasizing
+stroke-oriented vascular identity modelling. The repository URL, the Python
+package `strokepointpp`, and saved configuration/version identifiers remain
+unchanged for reproducibility and compatibility. Earlier artifacts may retain
+the display name StrokePoint++.
 
 | Version name | What it contains | Interpretation |
 | --- | --- | --- |
